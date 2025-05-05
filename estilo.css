@@ -1,0 +1,74 @@
+
+*{
+   margin:0px;
+}
+
+.titulo{
+
+    font-size: 80px;
+    color:white;
+    font-family:Luckiest Guy;
+    text-align: center;
+    margin: 0.5cm;
+}
+.cuadrado img{
+
+   width: 120px; 
+   height: 120px;
+   position: relative;
+   transform: translate(-850px,-130px);
+
+}
+header{
+
+   background-image: url("../staticpage_emp_alimentos/img/fondopizza1.jpg");
+   background-position: center;
+   padding: 3em;
+   text-align: center;
+   background-size: cover;
+   height: 150px;
+   background-color: rgba(0, 0, 0, 0.5);
+   background-blend-mode: darken;
+}
+.contacto{
+  
+   text-align: right;
+   position: relative;
+   transform: translate(0px,-265px);
+   
+}
+
+body{
+   background-color: #EBAB96;
+}
+
+.publicidad{
+   width: 300px; /* Ancho de la caja de publicidad */
+   height: 800px; /* Altura de la caja */
+   text-align: right;
+   position: relative;
+   transform: translate(1550px,120px);
+}
+
+.publicidad img{
+   width: 300px;
+   height: 800px;
+}
+
+/*----------------------------*/
+
+
+.pizzas {
+   background-color: white;
+   border-radius: 12px;
+   width: 300px;
+   text-align: center;
+   padding: 20px;
+
+ }
+
+ .pizzas img{
+   width: 200px;
+   height: auto;
+   border-radius: 12px;
+ }

@@ -39,7 +39,7 @@ header{
 }
 
 body{
-   background-color: #EBAB96;
+   background-color:beige;
 }
 
 .publicidad{
@@ -56,19 +56,35 @@ body{
 }
 
 /*----------------------------*/
+.menu{
+   display: flex;
+   gap: 20px; /* Espacio entre cajas */
+   flex-wrap: wrap; /* Para que bajen a otra línea si no entran */
+   justify-content: left;
+   margin-left: 100px;
+   transform: translate(0px,-750px);
+}
 
-
+.pizzas:hover {
+   transform: scale(1.05);
+ }
 .pizzas {
-   background-color: white;
+   background-color:darkgray;
    border-radius: 12px;
-   width: 300px;
+   width: 400px;
    text-align: center;
    padding: 20px;
 
  }
 
  .pizzas img{
-   width: 200px;
+   width: 350px;
    height: auto;
    border-radius: 12px;
  }
+
+.pizzas p{
+   font-family: sans-serif;
+   font-size: 20px;
+   color:white;
+}

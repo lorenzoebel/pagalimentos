@@ -74,17 +74,18 @@ body{
    width: 400px;
    text-align: center;
    padding: 20px;
-
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
  }
 
  .pizzas img{
    width: 350px;
    height: auto;
    border-radius: 12px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
  }
 
 .pizzas p{
-   font-family: sans-serif;
-   font-size: 20px;
+   font-family:luckiest guy;
+   font-size: 30px;
    color:white;
 }

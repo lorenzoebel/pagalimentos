@@ -40,6 +40,8 @@ header{
 
 body{
    background-color:beige;
+   background-color: rgba(0, 0, 0, 0.2);
+   background-blend-mode: darken;
 }
 
 .publicidad{
@@ -57,24 +59,28 @@ body{
 
 /*----------------------------*/
 .menu{
+  
    display: flex;
    gap: 20px; /* Espacio entre cajas */
    flex-wrap: wrap; /* Para que bajen a otra línea si no entran */
    justify-content: left;
    margin-left: 100px;
-   transform: translate(0px,-750px);
+   transform: translateY(-750px);
+ 
 }
 
 .pizzas:hover {
    transform: scale(1.05);
  }
+ 
 .pizzas {
-   background-color:darkgray;
+   background-color:gray;
    border-radius: 12px;
    width: 400px;
    text-align: center;
    padding: 20px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
+  
  }
 
  .pizzas img{
@@ -82,10 +88,48 @@ body{
    height: auto;
    border-radius: 12px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
+ 
  }
 
 .pizzas p{
    font-family:luckiest guy;
    font-size: 30px;
    color:white;
+   
+}
+
+footer{
+
+   background-color: #333; /* Gris oscuro */
+   color: #fff; /* Texto blanco */
+   padding: 80px;
+   text-align: center;
+
+}
+
+.ubi img{
+   position: relative;
+   width: 350px; 
+   height: max-content;
+   transform: translateX(650px);
+   border-radius: 12px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
+   
+}
+
+.comunicacion img{
+   
+   text-align: right;
+   position: relative;
+   top:-225px;
+   left:-650px
+}
+
+.politica img{
+
+   width:350px;
+   height:max-content;
+   position: relative;
+   top:-475px
+
 }

@@ -15,10 +15,9 @@
 
    width: 120px; 
    height: 120px;
-   position: relative;
-   transform: translate(-850px,-130px);
+   float: left; 
+   margin-top: -3.20cm;
    
-
 }
 header{
 
@@ -35,8 +34,9 @@ header{
   
    text-align: right;
    position: relative;
-   transform: translate(0px,-265px);
-   
+   /*transform: translate(0px,-265px);*/
+   float: right;
+   margin-top: -3.8cm;
 }
 
 body{
@@ -50,7 +50,10 @@ body{
    height: 800px; /* Altura de la caja */
    text-align: right;
    position: relative;
-   transform: translate(1550px,120px);
+   /*transform: translate(1550px,120px);*/
+   float: right;
+   margin-top: 1cm;
+   margin-right: 1cm;
 }
 
 .publicidad img{
@@ -60,14 +63,15 @@ body{
 
 /*----------------------------*/
 .menu{
-  
    display: flex;
    gap: 20px; /* Espacio entre cajas */
    flex-wrap: wrap; /* Para que bajen a otra línea si no entran */
-   justify-content: left;
+   /*justify-content: left;*/
    margin-left: 100px;
-   transform: translateY(-750px);
- 
+   /*transform: translateY(-750px);*/
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin-left: 100px;
 }
 
 .pizzas:hover {
@@ -81,7 +85,7 @@ body{
    text-align: center;
    padding: 20px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
-  
+   position: relative;
  }
 
  .pizzas img{
@@ -89,48 +93,35 @@ body{
    height: auto;
    border-radius: 12px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
- 
  }
 
 .pizzas p{
    font-family:luckiest guy;
    font-size: 30px;
    color:white;
-   
 }
+
+/*---------- FOOTER ----------*/
 
 footer{
-
    background-color: #333; /* Gris oscuro */
    color: #fff; /* Texto blanco */
-   padding: 80px;
-   text-align: center;
-
-}
-
-.ubi img{
-   position: relative;
-   width: 350px; 
-   height: max-content;
-   transform: translateX(650px);
-   border-radius: 12px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
-   
-}
-
-.comunicacion img{
-   
-   text-align: right;
-   position: relative;
-   top:-225px;
-   left:-650px
+   padding: 30px;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
 }
 
 .politica img{
-
-   width:350px;
+   width:300px;
    height:max-content;
-   position: relative;
-   top:-475px
-
 }
+
+.ubi img{
+   width: 300px; 
+   border-radius: 12px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra suave */
+   margin-top: 0cm;
+}
+
+

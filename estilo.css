@@ -32,14 +32,7 @@ header{
    float: left; 
    
 }
-.contacto{
 
-   text-align: right;
-   position: relative;
-   /*transform: translate(0px,-265px);*/
-   float: right;
-   margin-top: -3.8cm;
-}
 
 body{
    background-color:beige;
@@ -119,27 +112,6 @@ section {
 }
 
 /*---------- FOOTER ----------*/
-/*
-footer{
-   background-color: #333;  /Gris oscuro/ 
-   color: #fff;  
-   padding: 30px;
-   justify-content: space-between;
-   display: flex;
-   align-items: center;
-}
-.politica img{
-   width:300px;
-   height:max-content;
-}
-
-.ubi img{
-   width: 300px; 
-   border-radius: 12px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /sombra suave /
-   margin-top: 0cm;
-}
-*/
 .pie-pagina{
    width: 100%;
    background-color: #333;
@@ -246,28 +218,7 @@ footer{
       padding-bottom: 5%;
       gap: 20px;
    }
-/*------------------------------------
-   footer {
-      padding: 0;
-      margin: 0;
-      justify-content: space-between;
-   }
 
-   .ubi, .comunicacion, .politica {
-      width: 33%;
-   }
-   .ubi img, .ubi a{
-      width: 100%;
-   }
-
-   .comunicacion img {
-      width: 100%;
-   }
-
-   .politica a img{
-      width: 100%;
-   }
---------------------------------------*/
 .pie-pagina .grupo1{
    width: 90%;
    grid-template-columns: repeat(1,1fr);

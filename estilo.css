@@ -30,7 +30,6 @@ header{
    width: 120px; 
    height: 120px;
    float: left; 
-   margin-top: -3.20cm;
    
 }
 .contacto{
@@ -90,7 +89,7 @@ section {
 }
 
 .pizzas {
-   background-color:gray;
+   background-color:grey;
    border-radius: 12px;
    width: 350px;
    padding: 20px;
@@ -145,6 +144,37 @@ footer{
 
 /* RESPONSIVIDAD PARA CELULARES Y TABLETS (768px) */
 @media (max-width: 768px) {
+   
+   header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;      /* Centra horizontalmente */
+      justify-content: center;
+      
+   }
+   .cuadrado{
+      display: flex;
+      justify-content: center;
+   }
+   .cuadrado img{
+      display: flex;
+      text-align: center;
+      width: 25%; 
+      height: auto;
+      
+   }
+
+   .titulo{
+      font-size: 250%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      
+   }
+   .contacto{
+      display: none;
+   }
+   
    section {
       display: contents;
    }
@@ -155,13 +185,16 @@ footer{
       display: none;
    }
    .menu {
+      margin-top: 5%;
       width: 100%;
-      padding-bottom: 40px;
+      padding-bottom: 5%;
+      gap: 20px;
    }
 
    footer {
       padding: 0;
       margin: 0;
+      justify-content: space-between;
    }
 
    .ubi, .comunicacion, .politica {
@@ -172,7 +205,7 @@ footer{
    }
 
    .comunicacion img {
-     width: 100%;
+      width: 100%;
    }
 
    .politica a img{

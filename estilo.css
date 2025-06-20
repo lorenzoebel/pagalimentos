@@ -1,6 +1,8 @@
 *{
    margin:0px;
    box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
 }
 /*RESPONSIVIDAD PARA PC ESCUELA 1920X1080*/
 
@@ -14,6 +16,7 @@ header{
    height: 250px;
    background-color: rgba(0, 0, 0, 0.5);
    background-blend-mode: darken;
+   font-family: Luckiest Guy;
 }
 
 .titulo{
@@ -32,6 +35,78 @@ header{
    float: left; 
    
 }
+
+/*MENU HEADER*/
+.container{
+   max-width: 1100px;
+   margin: 0 auto;
+}
+.back{
+   padding: 25px;
+   max-width: 100%;
+   /*background-color: dimgray;*/
+}
+.menuh{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+}
+.menuh .navbar ul li{
+   position: relative;
+   float: left;
+}
+.menuh .navbar ul li a{
+   font-size: 18px;
+   padding: 10px;
+   color:white;
+   display: block;
+}
+.menuh .navbar ul li a:hover{
+   color: aqua;
+   background-color: rgba(0, 0, 0, 0.5); /* fondo negro semitransparente */
+   border-radius: 5px;
+
+}
+#menuh{
+   display: none;
+}
+.menu-icono{
+   width: 30px;
+}
+.menuh label{
+   cursor:pointer;
+   display: none;
+}
+@media(max-width:991px){
+
+   .menuh{
+      padding: 0px;
+   }
+   .menuh label{
+      display: flex;
+   }
+   .back{
+      padding: 10px 0;
+   }
+   .menuh .navbar{
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 250px;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: none;
+   }
+   .menuh .navbar ul li{
+      width: 100%;
+   }
+   #menuh:checked ~ .navbar{
+      display: flex;
+   }
+
+}
+
+
+/*-----------*/
 
 
 body{
@@ -139,10 +214,12 @@ section {
    color: #fff;
    margin-bottom: 25px;
    font-size: 20px;
+   
 }
 .pie-pagina .grupo1 .box p{
    color: #efefef;
    margin-bottom: 10px;
+   text-align: justify;
 }
 .pie-pagina .grupo1 .redsocial a{
    display: inline-block;

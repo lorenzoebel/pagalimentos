@@ -24,14 +24,20 @@
         </label>
         <nav class="navbar">
           <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">PRODUCTOS</a></li>
-            <li><a href="#">CONTACTO</a></li>
-            <li><a href="https://maps.app.goo.gl/STf7VMcr8tZdYEEM8" target="_blank">UBICACION</a></li>
+            <li><a href="#"onclick="cerrarMenu()">INICIO</a></li><!--onclick: cuando seleccione algo del menu este se cierre-->
+            <li><a href="#productosm"onclick="cerrarMenu()">PRODUCTOS</a></li>
+            <li><a href="#contactom"onclick="cerrarMenu()">CONTACTO</a></li>
+            <li><a href="https://maps.app.goo.gl/STf7VMcr8tZdYEEM8" onclick="cerrarMenu()" target="_blank">UBICACION</a></li>
           </ul>
         </nav>
       </div>
+      <script>
+        function cerrarMenu() {
+          document.getElementById('menuh').checked = false;
+        }
+      </script>
     </div>
+    
   <!-------->
 </header>
 <body>
@@ -46,7 +52,7 @@
       </div>
 
     
-      <div class="pizzas">
+      <div class="pizzas"><a name="productosm"></a>
         <img src="siciliana.jpg" alt="Pizza Siciliana">
         <br>
         <br>
@@ -120,7 +126,7 @@
   <p>¡Hechas con pasión, servidas con amor!</p>
 </div>
 <div class="box">
-  <h2>SIGUENOS</h2>
+  <h2>SIGUENOS</h2><a name="contactom"></a>
   <div class="redsocial">
     <a href="https://www.whatsapp.com" target="_blank"><img src="whatsapp.png" alt="logo whatsapp"></a>
     <a href="https://www.instagram.com" target="_blank"><img src="logo-instagram.png" alt="logo instagram"></a>

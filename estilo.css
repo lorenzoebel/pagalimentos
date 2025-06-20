@@ -3,6 +3,7 @@
    box-sizing: border-box;
    list-style: none;
    text-decoration: none;
+   padding: 0px;
 }
 /*RESPONSIVIDAD PARA PC ESCUELA 1920X1080*/
 
@@ -50,10 +51,12 @@ header{
    display: flex;
    align-items:center;
    justify-content: center;
+   gap: 10px;
 }
 .menuh .navbar ul li{
    position: relative;
    float: left;
+   text-align: center;
 }
 .menuh .navbar ul li a{
    font-size: 18px;
@@ -81,30 +84,31 @@ header{
 
    .menuh{
       padding: 0px;
+      
    }
    .menuh label{
       display: flex;
    }
    .back{
-      padding: 10px 0;
+      padding: 0px;
    }
    .menuh .navbar{
-      position: absolute;
-      left: 0%;
-      right: 0%;
+      position:absolute;
+      width: 100%;
       top: 250px;
       background-color: rgba(0, 0, 0, 0.2);
       display: none;
    }
    .menuh .navbar ul li{
       width: 100%;
+      text-align: center;
+      justify-content: center;
    }
    #menuh:checked ~ .navbar{
-      display: flex;
+      display: initial;
+      width: 100%;
    }
-
 }
-
 
 /*-----------*/
 

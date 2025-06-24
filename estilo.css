@@ -374,7 +374,7 @@ section {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.8);
       display: none;
-      margin-top: 10px;
+      margin-top: 15px;
    }
 
    #menuh:checked ~ .navbar {

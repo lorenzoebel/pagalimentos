@@ -358,15 +358,16 @@ section {
 
    /* MENÚ HAMBURGUESA */
    .menuh {
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 100%;
    }
 
    .menuh label {
       display: flex;
       justify-content: center;
+      margin-top: 10px;
    }
 
    .menuh .navbar {
@@ -380,6 +381,11 @@ section {
       display: block;
    }
 
+   .menuh .navbar ul {
+      padding: 0;
+      margin: 0;
+   }
+
    .menuh .navbar ul li {
       width: 100%;
       text-align: center;
@@ -389,12 +395,16 @@ section {
       font-size: 16px;
       padding: 12px 0;
       display: block;
+      color: white;
    }
 
    /* CONTENIDO PRINCIPAL */
    section {
+      display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0;
+      padding: 0;
    }
 
    .menu {
@@ -415,6 +425,11 @@ section {
    }
 
    /* FOOTER */
+   .pie-pagina {
+      margin: 0;
+      padding: 0;
+   }
+
    .pie-pagina .grupo1 {
       display: flex;
       flex-direction: column;
@@ -440,7 +455,7 @@ section {
 
    .pie-pagina .grupo1 .box h2 {
       font-size: 18px;
-      margin-bottom: 10px;
+      margin-bottom: 15px; /* MÁS ESPACIO ENTRE "SÍGUENOS" Y LOS ÍCONOS */
    }
 
    .pie-pagina .grupo1 .box p {
@@ -450,23 +465,28 @@ section {
    .pie-pagina .grupo1 .redsocial {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
       flex-wrap: wrap;
-      margin-top: 10px;
    }
 
    .pie-pagina .grupo1 .redsocial a {
       width: 40px;
       height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
 
    .pie-pagina .grupo1 .redsocial img {
       width: 100%;
       height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 0 2px #000000aa); /* mejora visual leve */
    }
 
    .pie-pagina .grupo2 {
       font-size: 13px;
       padding: 10px;
+      text-align: center;
    }
 }

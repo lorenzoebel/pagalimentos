@@ -374,7 +374,7 @@ section {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.8);
       display: none;
-      margin-top: 15px;
+      margin-top: 10px;
    }
 
    #menuh:checked ~ .navbar {
@@ -393,7 +393,7 @@ section {
 
    .menuh .navbar ul li a {
       font-size: 16px;
-      padding: 12px 0;
+      padding: 10px 0;
       display: block;
       color: white;
    }

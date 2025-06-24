@@ -333,61 +333,84 @@ section {
 
    /* HEADER */
    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5em;
-      height: auto;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      padding: 3em 1em;
       text-align: center;
    }
 
    .cuadrado {
       display: flex;
       justify-content: center;
-      width: 100%;
+      margin-bottom: 10px;
    }
 
    .cuadrado img {
-      width: 100px;
+      width: 90px;
       height: auto;
    }
 
    .titulo {
-      font-size: 220%;
-      margin-top: 10px;
-      text-align: center;
+      font-size: 200%;
+      margin: 0;
+      color: white;
    }
 
-   /* MENÚ */
+   /* MENÚ DESPLEGABLE */
    .menuh {
-      width: 100%;
       justify-content: center;
+      align-items: center;
       padding: 10px;
    }
 
    .menuh .navbar {
       position: absolute;
-      top: 100%;
+      top: 100%; /* SE DESPLIEGA JUSTO DEBAJO DEL HEADER */
+      left: 0;
       width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      z-index: 5;
+   }
+
+   .menuh label {
+      display: flex;
+      justify-content: center;
+   }
+
+   #menuh:checked ~ .navbar {
+      display: block;
+   }
+
+   .menuh .navbar ul li {
+      width: 100%;
+      text-align: center;
+   }
+
+   .menuh .navbar ul li a {
+      font-size: 16px;
+      padding: 10px 0;
+      display: block;
    }
 
    /* CUERPO */
    section {
-      display: flex;
       flex-direction: column;
       align-items: center;
    }
 
    .menu {
       width: 100%;
-      gap: 30px;
+      gap: 25px;
       flex-wrap: wrap;
       justify-content: center;
+      padding: 20px;
    }
 
    .pizzas {
-      width: 30%; /* 3 por fila si entra, 2 si no */
+      width: 30%;
+      min-width: 200px;
    }
 
    .publicidad {
@@ -396,10 +419,21 @@ section {
 
    /* FOOTER */
    .pie-pagina .grupo1 {
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 95%;
-      grid-gap: 20px;
       padding: 30px 0;
+      gap: 20px;
+   }
+
+   .pie-pagina .grupo1 .box {
+      width: 90%;
+      text-align: center;
+   }
+
+   .pie-pagina .grupo1 .box figure {
+      justify-content: center;
    }
 
    .pie-pagina .grupo1 .box figure img {
@@ -408,15 +442,15 @@ section {
 
    .pie-pagina .grupo1 .box h2 {
       font-size: 18px;
-      text-align: center;
+      margin-bottom: 10px;
    }
 
    .pie-pagina .grupo1 .box p {
       font-size: 14px;
-      text-align: center;
    }
 
-   .pie-pagina .grupo2 small {
+   .pie-pagina .grupo2 {
       font-size: 13px;
+      padding: 10px;
    }
 }

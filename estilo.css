@@ -367,7 +367,7 @@ section {
    .menuh label {
       display: flex;
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 0px;
    }
 
    .menuh .navbar {
@@ -393,7 +393,7 @@ section {
 
    .menuh .navbar ul li a {
       font-size: 16px;
-      padding: 7px 0;
+      padding: 0px 0;
       display: block;
       color: white;
    }

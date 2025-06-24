@@ -5,6 +5,7 @@
    text-decoration: none;
    padding: 0px;
 }
+
 /*RESPONSIVIDAD PARA PC ESCUELA 1920X1080*/
 
 header{
@@ -45,7 +46,6 @@ header{
 .back{
    padding: 25px;
    max-width: 100%;
-   /*background-color: dimgray;*/
 }
 .menuh{
    display: flex;
@@ -65,7 +65,7 @@ header{
    display: block;
 }
 .menuh .navbar ul li a:hover{
-   color: aqua;
+   
    background-color: rgba(0, 0, 0, 0.5); /* fondo negro semitransparente */
    border-radius: 5px;
 
@@ -80,6 +80,21 @@ header{
    cursor:pointer;
    display: none;
 }
+/*--- FLECHA SUBIR ---*/
+.flechasubir{
+   background-color: rgb(0, 0, 0);
+   padding: 10px;
+   border-radius: 50%;
+   position: fixed;
+   bottom: 15px;
+   right: 15px;
+   transition: .3s ease;
+}
+i img:hover{
+   /*background-color: rgba(60, 127, 228, 0.349);*/
+   transform: translateY(-4px);
+}
+/*--------------------*/
 @media(max-width:991px){
 
    .menuh{

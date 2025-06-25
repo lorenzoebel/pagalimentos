@@ -389,6 +389,7 @@ section {
    .menuh .navbar ul li {
       width: 100%;
       text-align: center;
+      padding: 5px;
    }
 
    .menuh .navbar ul li a {
